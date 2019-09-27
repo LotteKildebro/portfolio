@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LotteKildebro/portfolio.git"
+  },
+  "author": "Lotte Kildebro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LotteKildebro/portfolio/issues"
+  },
+  "homepage": "https://github.com/LotteKildebro/portfolio#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-ejs-extend": "0.0.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "express-session": "^1.16.2",
+    "gm": "^1.23.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.7.0",
+    "nodemon": "^1.19.2",
+    "short-unique-id": "^1.1.1"
+  }
+}
