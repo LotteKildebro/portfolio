@@ -12,7 +12,7 @@ module.exports = {
             'port': '3306',
             'user': 'root',
             'password': '', //husk password hvis SQL server kræver dette
-            'database': 'portfolio'
+            'database': 'lotte_portfolio_dk_1'
         });
     }
 };
