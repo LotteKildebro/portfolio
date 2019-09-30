@@ -29,6 +29,7 @@ directories.forEach(directory => {
     });
 });
 
+//express
 app.use(express.static('public'));
 
 // start serveren på port 3000
