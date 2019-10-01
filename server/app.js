@@ -33,7 +33,7 @@ directories.forEach(directory => {
 app.use(express.static('public'));
 
 // start serveren på port 3000
-const port = 3001;
+const port = 3002;
 app.listen(port, (err) => {
     if (err) {
         console.log(err);
