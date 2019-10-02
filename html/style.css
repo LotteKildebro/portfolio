@@ -1,0 +1,207 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 1280px;
+}
+body{
+    background: rgba(0, 0, 0, 1);
+    background-size: cover;
+}
+
+#container{
+  padding: 10rem 0px 0px 0px;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 6.1+ */
+  justify-content: center;
+}
+.item{
+  margin: 0px;
+  padding: 0px;
+  width: 600px;
+}
+.tit1{
+  color: #ffffff;
+  font-size: 14em;
+  height: 210px;
+
+}
+.tit2{
+  font-size: 3em;
+  padding-left: 52px;
+  color: #e426ca;
+}
+.tit1, .tit2{
+  font-family: 'Source Code Pro', monospace;
+}
+p{
+  color: #ffffff;
+}
+/*CSS for burgermenu!*/
+input {
+    display: none;
+  }
+  
+  .open {
+    background-color: #e426ca;
+    width: 50px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+  }
+  
+  .open:before {
+    content: "";
+    background-color: #ffffff;
+    width: 50px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .open:after {
+    content: "";
+    background-color: #ffffff;
+    width: 50px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .menuOpen:hover .open:before {
+    top: -9px;
+  }
+  
+  .menuOpen:hover .open:after {
+    top: 5px;
+  }
+  
+  .menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .menu .menuContent {
+    position: relative;
+    top: 50%;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  
+  .menu ul li a:hover {
+    color: #e61fbb;
+    cursor: pointer;
+  }
+  
+  .menu ul li:hover {
+    cursor: pointer;
+  }
+  
+  .menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  
+  .menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    background-color: white;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+  }
+  
