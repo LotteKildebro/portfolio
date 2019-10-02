@@ -5,16 +5,27 @@
 }
 
 #wrapper{
+  
     margin: 0 auto;
     width: 1280px;
 }
+p{
+  color: #ffffff;
+}
+h1{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 5em;
+
+}
 body{
-    background: rgba(0, 0, 0, 1);
+  
+    background: rgba(0, 0, 0, 1) url("../images/bg.jpg") no-repeat fixed center;
     background-size: cover;
 }
-
+/*flexbox for titles*/
 #container{
-  padding: 10rem 0px 0px 0px;
+  padding: 8.5rem 0px 0px 0px;
   width: 100%;
   height: 30rem;
   display: flex;
@@ -36,21 +47,29 @@ body{
 .tit2{
   font-size: 3em;
   padding-left: 52px;
-  color: #e426ca;
+  color: #ecf00c;
 }
 .tit1, .tit2{
   font-family: 'Source Code Pro', monospace;
 }
-p{
-  color: #ffffff;
+/*flexbox for footer*/
+#container2{
+  display: flex;
+  justify-content: space-evenly;
 }
+.item2{
+  margin: 10px;
+  padding: 10px;
+  width: 10px;
+}
+
 /*CSS for burgermenu!*/
 input {
     display: none;
   }
   
   .open {
-    background-color: #e426ca;
+    background-color:  #ecf00c;
     width: 50px;
     height: 3px;
     display: block;
@@ -148,7 +167,7 @@ input {
   }
   
   .menu ul li a:hover {
-    color: #e61fbb;
+    color:  #ecf00c;
     cursor: pointer;
   }
   
@@ -188,7 +207,7 @@ input {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 5;
   }
   
   #menuToggle:checked ~ .menuOpen .open:after {
@@ -198,10 +217,74 @@ input {
     position: relative;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 5;
   }
   
   #menuToggle:not(:checked) ~ .menuEffects ul {
     transform: translateY(-30%);
   }
-  
+/*Work.html page*/
+
+/*flexbox for links/pictures*/
+#container3{
+  display: flex;
+  justify-content: space-evenly;
+}
+.item3{
+  margin: 3px;
+  padding: 3px;
+  width: 426.66px;
+  height: 426.66px;
+  cursor: pointer;
+}
+.item3 img{
+width: 426.66px;
+height: 426.66px;
+border-radius: 50%;
+}
+/*img hover overlay*/
+.imgcon {
+  position: relative;
+  width: 50%;
+  margin: 0px !important;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 426.66px;
+  width: 426.66px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .3s ease-in;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.imgcon:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
