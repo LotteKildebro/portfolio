@@ -292,3 +292,12 @@ border-radius: 50%;
 .container2 .fa-instagram:before a:hover {
   color: #ffffff;
 }
+/*to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 1000px;
+  z-index: 99;
+  transform: translateX(+310%);
+}
