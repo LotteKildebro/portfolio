@@ -16,7 +16,18 @@ h1{
   font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 5em;
-
+  margin-left: 42%;
+}
+h2{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 2em;
+}
+.h1{
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 3em;
+  margin-left: 12%;
 }
 body{
   
@@ -300,4 +311,29 @@ border-radius: 50%;
   right: 1000px;
   z-index: 99;
   transform: translateX(+310%);
+}
+/*horizontal menu for mul b site*/
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header li {
+  float: left;
+  font-family: 'Source Code Pro', monospace;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  border-bottom: solid 1px rgb(241, 245, 10);
 }
