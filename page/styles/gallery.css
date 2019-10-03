@@ -1,0 +1,63 @@
+
+
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tabbed Banner Start */
+#GalleryHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#GalleryTabHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 482px;
+  margin-right: 20px;
+  /* Stops the 4px invisible margin occuring below images */
+  font-size: 0;
+  position: relative;
+}
+
+.GalleryTab {
+  position: relative;
+  opacity: 0.8;
+  border: 1px solid black;
+  filter: gray;
+  filter: grayscale(1);
+  filter: blur(5px);
+  -webkit-filter: grayscale(1);
+  float: left;
+}
+
+.GalleryTab:hover {
+  opacity: 1 !important;
+  -webkit-filter: grayscale(0) !important;
+  filter: none;
+  cursor: pointer;
+}
+
+.GalleryTab::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  z-index: 10;
+  filter: opacity(50%);
+}
+
+.GalleryImage {
+  display: none;
+  border: 1px solid black;
+  font-size: 0;
+}
+/* End of tabbed Banner */

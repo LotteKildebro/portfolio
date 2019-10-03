@@ -34,7 +34,7 @@ body{
   justify-content: center;
 }
 .item{
-  margin: 0px;
+  margin-left: -50px;
   padding: 0px;
   width: 600px;
 }
@@ -287,4 +287,8 @@ border-radius: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+/*footer items*/
+.container2 .fa-instagram:before a:hover {
+  color: #ffffff;
 }
