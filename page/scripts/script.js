@@ -1,7 +1,4 @@
-// Image Gallery Auto Changer with pausing on thumbnail click.
-// Feel free to use as you wish, attribution appreciated but not necessary.
-// Henley Bailey 08-2019
-
+//Borrowed script from codepen ;)
 // The tabs or small thumbnails of the images.
 const tabs = document.querySelectorAll(".GalleryTab");
 const tabOpacity = 0.7;
