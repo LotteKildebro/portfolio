@@ -15,7 +15,7 @@
 
 <body>
     <span onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="images/pil.png" width="15%;">
+        <img src="images/pile.png" width="15%;">
     </span>
     <div id="wrapper">
         <div id="menuArea">
@@ -48,8 +48,58 @@
         <header>
             <h1>SITES</h1>
         </header>
-        <img src="images/web3.jpg">
-        <img src="images/web1.jpg">
+
+        <div class="row">
+            <div class="column">
+                <img src="images/web3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/web1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/web3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/web1.jpg" style="width:100%">
+                </div>
+
+
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/web3.jpg" onclick="currentSlide(1)" alt="A homepage I made to practice different galleries.">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/web1.jpg" onclick="currentSlide(2)" alt="I made this to practice dynamic websites, with SQL and routes.">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
 
         <footer class="col-sm-12 ">
 
@@ -57,23 +107,24 @@
 
                 <div class="item2">
                     <a href="#">
-                        <i class="fa fa-facebook-square" style="font-size:60px;color:rgb(238, 255, 0);"></i>
+                        <i class="fa fa-facebook-square" style="font-size:30px;color: #76d1ca;"></i>
                     </a>
                 </div>
 
 
                 <div class="item2">
                     <a href="#">
-                        <i class="fa fa-instagram" style="font-size:60px;color:rgb(238, 255, 0);"></i>
+                        <i class="fa fa-instagram" style="font-size:30px;color: #76d1ca;"></i>
                     </a>
                 </div>
 
 
                 <div class="item2">
                     <a href="#">
-                        <i class="fa fa-linkedin-square" style="font-size:60px;color:rgb(238, 255, 0);"></i>
+                        <i class="fa fa-linkedin-square" style="font-size:30px;color: #76d1ca;"></i>
                     </a>
                 </div>
+
 
             </div>
         </footer>
@@ -102,6 +153,49 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    } </script>
+    }
+
+    //--------This is the LIGHTBOX-------
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
 
 </html>
