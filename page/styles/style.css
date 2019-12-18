@@ -31,10 +31,13 @@ h2{
 }
 body{
   
-    background: rgba(0, 0, 0, 1) url("../images/bg.jpg") no-repeat fixed center;
+    background: rgba(0, 0, 0, 1) url("../images/sort.jpg") no-repeat fixed center;
     background-size: cover;
 }
 /*button,contact*/
+.buttonc {
+  margin-top: 1rem;
+}
 .buttonc a{
   color: #ffffff;
   text-decoration: none;
@@ -43,13 +46,13 @@ body{
   font-size: 1rem;
 }
 .buttonc a:hover{
-  color: rgb(241, 238, 13);
+  color:  #76d1ca;
 }
 /*flexbox for titles*/
 #container{
   padding: 8rem 0px 0px 0px;
   width: 100%;
-  height: 27rem;
+  height: 31rem;
   display: flex;
   display: -webkit-flex; /* Safari */
   -webkit-justify-content: center; /* Safari 6.1+ */
@@ -69,9 +72,15 @@ body{
 .tit2{
   font-size: 3em;
   padding-left: 52px;
-  color: #ecf00c;
+  color: #76d1ca;
 }
-.tit1, .tit2{
+.tit3{
+  font-size: 2em;
+  padding-left: 52px;
+  color: #ffffff;
+  padding-left: 35%;
+}
+.tit1, .tit2, .tit3{
   font-family: 'Source Code Pro', monospace;
 }
 /*flexbox for footer*/
@@ -91,7 +100,7 @@ input {
   }
   
   .open {
-    background-color:  #ecf00c;
+    background-color:  #76d1ca;
     width: 50px;
     height: 3px;
     display: block;
@@ -189,7 +198,7 @@ input {
   }
   
   .menu ul li a:hover {
-    color:  #ecf00c;
+    color:   #76d1ca;
     cursor: pointer;
   }
   
@@ -251,65 +260,25 @@ input {
 #container3{
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 6rem;
 }
 .item3{
   margin: 3px;
   padding: 3px;
-  width: 426.66px;
-  height: 426.66px;
+  width: 400px;
+  height: 400px;
   cursor: pointer;
 }
 .item3 img{
-width: 426.66px;
-height: 426.66px;
+width: 400px;
+height: 400px;
 border-radius: 50%;
 }
-/*img hover overlay*/
-.imgcon {
-  position: relative;
-  width: 50%;
-  margin: 0px !important;
+.item3 a img:hover{
+  background-color: white;
+  opacity: .3;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: -1;
-}
-
-.overlay {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 426.66px;
-  width: 426.66px;
-  border-radius: 50%;
-  opacity: 0;
-  transition: .3s ease-in;
-  background-color: rgb(0, 0, 0, 0.8);
-}
-
-.imgcon:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 /*footer items*/
 .container2 .fa-instagram:before a:hover {
   color: #ffffff;
@@ -345,7 +314,7 @@ header li a {
 }
 
 header li a:hover {
-  border-bottom: solid 1px rgb(241, 245, 10);
+  border-bottom: solid 1px  #76d1ca;
 }
 /*ABOUT SITE*/
 .imglot{
@@ -376,7 +345,7 @@ h3{
 .padb{
   margin-bottom: 2%;
 }
-/*Contact site overlay*/
+/*Contact site overlay
 .overlay {
   height: 100%;
   width: 0;
@@ -416,4 +385,175 @@ h3{
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+*/
+.row > .column {
+  padding: 0 8px;
+}
+div.row{
+  margin-left: 150px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  max-width: 26.5%;
+  cursor: pointer;
+  background:rgba(0, 0, 0, .4);
+  margin: .5em;
+}
+.row .column img{
+  width: 300px;
+  height: 300px;
+  padding-top: 3%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #76d1ca;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding-bottom: 60%;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+  width: 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: .3;
+}
+
+
+/*School work*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 50px;
+  margin-left: 20%;
+}
+.grid-item {
+  padding: 50px;
+  text-align: center;
+  margin: 20px;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 2em;
+  background-color: black;
+  border: solid 2px white;
+}
+a{
+  text-decoration: none;
+}
+.grid-container a .grid-item:hover{
+  background-color: #ffffff;
+  color: black;
+}
+
+/*flows*/
+.bgf{
+  background-color: black;
+  opacity: .8;
 }
