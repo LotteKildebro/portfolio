@@ -160,6 +160,7 @@ input {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
   }
   
   .menu label {
@@ -345,48 +346,7 @@ h3{
 .padb{
   margin-bottom: 2%;
 }
-/*Contact site overlay
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-*/
 .row > .column {
   padding: 0 8px;
 }
@@ -411,6 +371,7 @@ div.row{
   width: 300px;
   height: 300px;
   padding-top: 3%;
+  border: solid 1px white;
 }
 
 /* The Modal (background) */
@@ -533,6 +494,8 @@ img.hover-shadow {
   padding: 10px;
   grid-column-gap: 50px;
   margin-left: 20%;
+  margin-bottom: 9%;
+  margin-top: 6%;
 }
 .grid-item {
   padding: 50px;
@@ -557,3 +520,96 @@ a{
   background-color: black;
   opacity: .8;
 }
+
+  .bgf a{
+    background-color:  #76d1ca; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 15em 5px 10px 5px;
+  }
+  .learn a{
+    background-color:  #76d1ca; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+  }
+  .marg {
+    margin-left: 5em;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+  }
+  
+  .flex-container > div {
+    width: 600px;
+    margin: 10px;
+  }
+  .marg22{
+margin-left: 10px;
+  }
+  .marg12{
+    margin-left: 60px;
+  }
+  iframe{
+    border: 1px solid white;
+  }
+
+  
+  /*CONTACT*/
+  form .td{
+    border: 1px solid white;
+    background-color: white;
+    width: 200px;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+  }
+ form{
+   margin-left: 400px;
+ }
+  input[type=text], #subject {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  label{
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .submit {
+    background-color: rgb(76, 175, 170);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .container12 {
+    background-color:  rgb(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+
+  
+  

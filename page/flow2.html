@@ -61,42 +61,166 @@
             <h2>SEMESTER 1</h2>
         </header>
         <main>
+            <div class="learn">
+                <a href="learn2.html" target="_blank ">Læring for flow 2</a>
+            </div>
+            <div class="bgf">
 
+                <div class="bgf">
+                    <div class="flex-container">
+                        <div>
+                            <h2> FLOW 2 </h2>
+                            <p>we had to make a homepage of our own personal portfolio.
+                                <br>It is not completely the same design as the XD in flow 1.2
+                                <br>Afterwards in my exam I made a re-make to optimize the layout
+                            </p>
+
+                            <img src="images/portfolio2.png" width="600px;" alt="portfolio">
+                        </div>
+                        <div>
+
+                            <a class="marg" href="http://lotte-portfolio.dk/cph/portfolio/page/index.html" target="_blank ">old portfolio</a>
+                            <a class="marg" href="assignflow2.html " target="_blank ">Read assignment</a>
+                            <a class="marg" href="https://github.com/LotteKildebro/portfolio" target="_blank ">GitHub reporsitory</a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <h2 class="marg22">Re-make</h2>
+                        <div class="column ">
+                            <img src="images/portfoliobeforeafter.jpg" onclick="openModal();currentSlide(1) " class="hover-shadow ">
+                            <p>I changed the colors of the layout to make it easier
+                                <br> on the eye, the bright yellow can be a little agressive.
+
+                            </p>
+                        </div>
+                        <div class="column ">
+                            <img src="images/portfolio3.jpg " onclick="openModal();currentSlide(2) " class="hover-shadow ">
+                            <p>It makes it more UX friendly</br>and easier to navigate. By changing the hover.</p>
+                        </div>
+                        <div class="column ">
+                            <img src="images/portfolio4.png " onclick="openModal();currentSlide(3) " class="hover-shadow ">
+                            <p>iv'e also added a description to each element
+                                <br> to explain what it contains.
+
+                                </br>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal " class="modal ">
+                        <span class="close cursor " onclick="closeModal() ">&times;</span>
+                        <div class="modal-content ">
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">1 / 3</div>
+                                <img src="images/portfoliobeforeafter.jpg " style="width:100% ">
+                            </div>
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">2 / 3</div>
+                                <img src="images/portfolio3.jpg " style="width:100% ">
+                            </div>
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">3 / 3</div>
+                                <img src="images/portfolio4.png " style="width:100% ">
+                            </div>
+
+
+
+                            <!-- Next/previous controls -->
+                            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+                            <!-- Caption text -->
+                            <div class="caption-container ">
+                                <p id="caption "></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
 
         </main>
-        <footer class="col-sm-12 ">
-
-            <div id="container2">
-
-                <div class="item2">
-                    <a href="#">
-                        <i class="fa fa-facebook-square" style="font-size:30px;color: #76d1ca;"></i>
-                    </a>
-                </div>
 
 
-                <div class="item2">
-                    <a href="#">
-                        <i class="fa fa-instagram" style="font-size:30px;color: #76d1ca;"></i>
-                    </a>
-                </div>
 
-
-                <div class="item2">
-                    <a href="#">
-                        <i class="fa fa-linkedin-square" style="font-size:30px;color: #76d1ca;"></i>
-                    </a>
-                </div>
-
-
-            </div>
-        </footer>
-
-
-    </div>
-    <!-- end wrapper -->
+        </div>
+        <!-- end wrapper -->
 
 </body>
-<script src="script.js"> </script>
+
+<script src="script.js "> </script>
+<script>
+    //--------This is the LIGHTBOX-------
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal ").style.display = "block ";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal ").style.display = "none ";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides ");
+        var dots = document.getElementsByClassName("demo ");
+        var captionText = document.getElementById("caption ");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none ";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active ", " ");
+        }
+        slides[slideIndex - 1].style.display = "block ";
+        dots[slideIndex - 1].className += " active ";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+    $(function () {
+
+        $('#goDown').click(function (event) {
+            // dette gør at det ikke er default
+            event.preventDefault();
+            // højden af doc.
+            var n = $('#trailer').offset().top;
+            $('html, body').animate({ scrollTop: n }, 3500);
+        });
+
+        $("#readmore").click(function () {
+            $("#ekstra").toggle(function () {
+                if ($("#ekstra").is(":visible")) {
+                    $("#readmore").text("Læs mindre...");
+                } else {
+                    $("#readmore").text("Læs mere...");
+                }
+            });
+        });
+    });
+
+</script>
 
 </html>

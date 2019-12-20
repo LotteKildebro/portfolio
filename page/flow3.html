@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Source+Code+Pro:700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Lotte's Portfolio</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="menuArea">
+            <input type="checkbox" id="menuToggle"></input>
+
+            <label for="menuToggle" class="menuOpen">
+                <div class="open"></div>
+            </label>
+
+            <div class="menu menuEffects">
+                <label for="menuToggle"></label>
+                <div class="menuContent">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="work.html">WORK</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="mulb.html">MUL B</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+
+            <ul>
+                <li>
+                    <a class="active" href="mulb.html">SEMESTER 1</a>
+                </li>
+                <li>
+                    <a href="#">SEMESTER 2</a>
+                </li>
+                <li>
+                    <a href="#">SEMESTER 3</a>
+                </li>
+                <li>
+                    <a href="#">SEMESTER 4</a>
+                </li>
+            </ul>
+            <h2>SEMESTER 1</h2>
+        </header>
+        <main>
+            <div class="learn">
+                <a href="learn3.html" target="_blank ">Læring for flow 3</a>
+            </div>
+            <div class="bgf">
+
+                <div class="bgf">
+                    <div class="flex-container">
+                        <div>
+                            <h2> FLOW 3 </h2>
+                            <p>we had to make an XD prototype app.
+                                <br>I made an app for the music bar Gimle
+                                <br>I created the app for an fictional campagn to support
+                                <br>FN 17 goals, specifically the goal "stop hunger"
+                            </p>
+
+                            <img src="images/gimle.png" width="600px;" alt="portfolio">
+                        </div>
+                        <div>
+
+                            <a class="marg" href=" https://xd.adobe.com/view/e7f5fede-80e6-4880-5b72-6a30107f8e4b-91c4/?hints=off " target="_blank ">XD link</a>
+                            <a class="marg" href="assignflow3.html " target="_blank ">Read assignment</a>
+                            <a class="marg" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aa3308229-a914-4630-945f-dbc5515e7256"
+                                target="_blank ">Pdf report</a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <h2 class="marg22">Re-make</h2>
+                        <div class="column ">
+                            <img src="images/gimlebefore.png" onclick="openModal();currentSlide(1) " class="hover-shadow ">
+                            <p>This is the index page of the XD prototype
+                                <br> my teacher thought that the orange ticket.
+                                <br>could resemble a bandage instead of a ticket...
+
+                            </p>
+                        </div>
+                        <div class="column ">
+                            <img src="images/gimleafter.png " onclick="openModal();currentSlide(2) " class="hover-shadow ">
+                            <p>So I changed the color to grey, so that the user of the page
+                                <br>wont have any misleading content.
+                            </p>
+                        </div>
+                        <div class="column ">
+                            <img src="images/gimleticket.png" onclick="openModal();currentSlide(3) " class="hover-shadow ">
+                            <p>Close up on the ticket
+                                <br>
+
+                                </br>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal " class="modal ">
+                        <span class="close cursor " onclick="closeModal() ">&times;</span>
+                        <div class="modal-content ">
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">1 / 3</div>
+                                <img src="images/gimlebefore.png" style="width:100% ">
+                            </div>
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">2 / 3</div>
+                                <img src="images/gimleafter.png " style="width:100% ">
+                            </div>
+
+                            <div class="mySlides ">
+                                <div class="numbertext ">3 / 3</div>
+                                <img src="images/gimleticket.png" style="width:100% ">
+                            </div>
+
+
+
+                            <!-- Next/previous controls -->
+                            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+                            <!-- Caption text -->
+                            <div class="caption-container ">
+                                <p id="caption "></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </main>
+
+
+
+        </div>
+        <!-- end wrapper -->
+
+</body>
+
+<script src="script.js "> </script>
+<script>
+    //--------This is the LIGHTBOX-------
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal ").style.display = "block ";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal ").style.display = "none ";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides ");
+        var dots = document.getElementsByClassName("demo ");
+        var captionText = document.getElementById("caption ");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none ";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active ", " ");
+        }
+        slides[slideIndex - 1].style.display = "block ";
+        dots[slideIndex - 1].className += " active ";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+    $(function () {
+
+        $('#goDown').click(function (event) {
+            // dette gør at det ikke er default
+            event.preventDefault();
+            // højden af doc.
+            var n = $('#trailer').offset().top;
+            $('html, body').animate({ scrollTop: n }, 3500);
+        });
+
+        $("#readmore").click(function () {
+            $("#ekstra").toggle(function () {
+                if ($("#ekstra").is(":visible")) {
+                    $("#readmore").text("Læs mindre...");
+                } else {
+                    $("#readmore").text("Læs mere...");
+                }
+            });
+        });
+    });
+
+</script>
+
+</html>
