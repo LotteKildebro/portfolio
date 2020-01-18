@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- validation said illegal value = | for pipe -->
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Source+Code+Pro:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Lotte's Portfolio</title>
@@ -17,13 +19,14 @@
     <div id="wrapper">
         <div>
             <div class="buttonc">
-                <a href="contact.html">CONTACT</a>
+                <a href="html/contact.html">CONTACT</a>
             </div>
         </div>
         <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+            <input type="checkbox" id="menuToggle" />
 
             <label for="menuToggle" class="menuOpen">
+                <!-- the validation of this div end tag, comes as stray. do not remove -->
                 <div class="open"></div>
             </label>
 
@@ -35,13 +38,13 @@
                             <a href="index.html">HOME</a>
                         </li>
                         <li>
-                            <a href="work.html">WORK</a>
+                            <a href="html/work.html">WORK</a>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                            <a href="html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="mulb.html">MUL B</a>
+                            <a href="html/mulb.html">MUL B</a>
                         </li>
                     </ul>
                 </div>
@@ -52,15 +55,11 @@
 
                 <div class="item">
                     <div class="tit1">LOTTE</div>
-                    <div div class="tit2">CREATIVE DEVELOPER.</div>
-
-
+                    <div class="tit2">CREATIVE DEVELOPER.</div>
                 </div>
 
-
-
             </div>
-            <!--button contact-->
+
 
         </header>
 
@@ -88,15 +87,14 @@
                     </a>
                 </div>
 
-
             </div>
         </footer>
 
 
     </div>
     <!-- end wrapper -->
-
+    <script src="script.js"> </script>
 </body>
-<script src="script.js"> </script>
+
 
 </html>

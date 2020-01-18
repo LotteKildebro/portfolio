@@ -35,6 +35,9 @@ body{
     background-size: cover;
 }
 /*button,contact*/
+.h1c{
+  margin-left: 400px;
+}
 .buttonc {
   margin-top: 1rem;
 }
@@ -517,8 +520,7 @@ a{
 
 /*flows*/
 .bgf{
-  background-color: black;
-  opacity: .8;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
   .bgf a{
@@ -599,6 +601,7 @@ margin-left: 10px;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
   }
   
   .submit:hover {
@@ -609,6 +612,134 @@ margin-left: 10px;
   .container12 {
     background-color:  rgb(0, 0, 0, 0.4);
     padding: 20px;
+  }
+  .imglot2 {
+    display: none;
+  }
+  .mtext{
+    display: none;
+  }
+  .item5 .imgu1 {
+    width: 300px;
+  }
+  .item5 .imglot{
+    width: 80%;
+  }
+  @media only screen and (max-width: 600px) {
+    .menu {
+      width: 100%;
+      height: 100%;
+  }
+  .menu ul li a {
+    padding: 10px 0;
+    font-size: 2em;
+}
+.open:after, .open:before, .open{
+  width: 100px;
+  height: 7px;
+}
+.imglot2 {
+  display: block;
+  margin-left: 20px;
+}
+#container_about{
+  display: none;
+}
+.mtext{
+  display: block;
+  font-size: 3em;
+  padding-left: 20px;
+}
+.mtext img{
+  width: 500px;
+  margin-left: 400px;
+}
+.item{
+  width: 100%;
+  margin-left: 40px;
+}
+.tit1{
+  font-size: 24em;
+}
+.tit2{
+  margin-top: 4em;
+  margin-left: 20%;
+}
+.buttonc a {
+  font-size: 3em;
+  position: absolute;
+}
+.fa-linkedin-square:before {
+  font-size: 100px;
+}
+.fa-instagram:before{
+  font-size: 100px;
+}
+.fa-facebook-square:before{
+  font-size: 100px;
+}
+.item3{
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+.item3 img {
+  width: 100%;
+  height: 100%;
+}
+#container3{
+  display: block;
+}
+.tit3{
+  font-size: 7em;
+}
+h1{
+  font-size: 10em;
+}
+.nav3 ul li a{
+  font-size: 2.4em;
+}
+.grid-container{
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.grid-item {
+  width: 90%;
+  height: 2em;
+  font-size: 10em;
+  padding-top: 120px;
+}
+.container{
+  display: block !important;
+}
+.column{
+  max-width: 100%;
+}
+.row .column img{
+  width: 100%;
+  height: 100%;
+}
+
+div.row{
+  margin-left: 50px;
+}
+.row p{
+  font-size: 3em;
+}
+img , iframe{
+  width: 100%;
+}
+.bgf{
+  display: block;
+}
+span img{
+  display: none;
+}
+iframe{
+  width: 1200px;
+  height: 560px;
+}
   }
 
   

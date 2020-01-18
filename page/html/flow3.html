@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Source+Code+Pro:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Lotte's Portfolio</title>
 </head>
+<span onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="../images/pile.png" width="15%;">
+</span>
 
 <body>
     <div id="wrapper">
         <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+            <input type="checkbox" id="menuToggle" />
 
             <label for="menuToggle" class="menuOpen">
                 <div class="open"></div>
@@ -27,16 +31,16 @@
                 <div class="menuContent">
                     <ul>
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="../index.html">HOME</a>
                         </li>
                         <li>
-                            <a href="work.html">WORK</a>
+                            <a href="../html/work.html">WORK</a>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                            <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">MUL B</a>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +80,7 @@
                                 <br>FN 17 goals, specifically the goal "stop hunger"
                             </p>
 
-                            <img src="images/gimle.png" width="600px;" alt="portfolio">
+                            <img src="../images/gimle.png" width="600px;" alt="portfolio">
                         </div>
                         <div>
 
@@ -89,7 +93,7 @@
                     <div class="row ">
                         <h2 class="marg22">Re-make</h2>
                         <div class="column ">
-                            <img src="images/gimlebefore.png" onclick="openModal();currentSlide(1) " class="hover-shadow ">
+                            <img src="../images/gimle2.png" onclick="openModal();currentSlide(1) " class="hover-shadow ">
                             <p>This is the index page of the XD prototype
                                 <br> my teacher thought that the orange ticket.
                                 <br>could resemble a bandage instead of a ticket...
@@ -97,13 +101,13 @@
                             </p>
                         </div>
                         <div class="column ">
-                            <img src="images/gimleafter.png " onclick="openModal();currentSlide(2) " class="hover-shadow ">
+                            <img src="../images/gimle3.png " onclick="openModal();currentSlide(2) " class="hover-shadow ">
                             <p>So I changed the color to grey, so that the user of the page
                                 <br>wont have any misleading content.
                             </p>
                         </div>
                         <div class="column ">
-                            <img src="images/gimleticket.png" onclick="openModal();currentSlide(3) " class="hover-shadow ">
+                            <img src="../images/ticket.png" onclick="openModal();currentSlide(3) " class="hover-shadow ">
                             <p>Close up on the ticket
                                 <br>
 
@@ -123,17 +127,17 @@
 
                             <div class="mySlides ">
                                 <div class="numbertext ">1 / 3</div>
-                                <img src="images/gimlebefore.png" style="width:100% ">
+                                <img src="../images/gimlebefore.png" style="width:100% ">
                             </div>
 
                             <div class="mySlides ">
                                 <div class="numbertext ">2 / 3</div>
-                                <img src="images/gimleafter.png " style="width:100% ">
+                                <img src="../images/gimleafter.png " style="width:100% ">
                             </div>
 
                             <div class="mySlides ">
                                 <div class="numbertext ">3 / 3</div>
-                                <img src="images/gimleticket.png" style="width:100% ">
+                                <img src="../images/gimleticket.png" style="width:100% ">
                             </div>
 
 
@@ -164,6 +168,25 @@
 
 <script src="script.js "> </script>
 <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     //--------This is the LIGHTBOX-------
     // Open the Modal
     function openModal() {

@@ -3,23 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/gallery.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Source+Code+Pro:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Lotte's Portfolio</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-
 </head>
 
 <body>
     <div id="wrapper">
         <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+            <input type="checkbox" id="menuToggle">
 
             <label for="menuToggle" class="menuOpen">
                 <div class="open"></div>
@@ -30,60 +28,46 @@
                 <div class="menuContent">
                     <ul>
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="../index.html">HOME</a>
                         </li>
                         <li>
-                            <a href="work.html">WORK</a>
+                            <a href="../html/work.html">WORK</a>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                            <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">MUL B</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <header>
-            <h1>LABELS</h1>
+
+            <h1 class="h1c">CONTACT</h1>
         </header>
         <main>
-            <article>
-                <div id="GalleryHolder">
 
-                    <div id="GalleryTabHolder">
-                        <div class="GalleryTab">
-                            <img src="labels/pic1t.jpg" alt="label1" width="160px;" />
-                        </div>
-                        <div class="GalleryTab">
-                            <img src="labels/pic2t.png" alt="label2" width="160px;" />
-                        </div>
-                        <div class="GalleryTab">
-                            <img src="labels/pic3t.jpg" alt="label3" width="160px;" />
-                        </div>
-                    </div>
 
-                    <div class="GalleryImage">
-                        <a href="/#">
-                            <img src="labels/pic1.jpg" alt="label1" height="482px;" />
-                        </a>
-                    </div>
-                    <div class="GalleryImage">
-                        <a href="/#">
-                            <img src="labels/pic2.png" alt="label2" height="482px;" />
-                        </a>
-                    </div>
-                    <div class=" GalleryImage ">
-                        <a href="/# ">
-                            <img src="labels/pic3.jpg " alt="label3 " height="482px;" />
-                        </a>
-                    </div>
-                </div>
-            </article>
+            <div class="container12">
+                <form>
+                    <label for="fname">First Name</label>
+                    <div class="td">First Name..</div>
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <div class="td">Last Name..</div>
+                    <br>
 
+                    <br>
+                    <label for="subject">Subject</label>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <br>
+                    <a class="submit" href="#" style="margin-left: 330px;">Submit</a>
+                </form>
+            </div>
         </main>
-
         <footer class="col-sm-12 ">
 
             <div id="container2">
@@ -117,6 +101,6 @@
     <!-- end wrapper -->
 
 </body>
-<script src="scripts/script.js"> </script>
+<script src="script.js"> </script>
 
 </html>

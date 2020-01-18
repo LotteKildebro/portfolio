@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Source+Code+Pro:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Lotte's Portfolio</title>
 </head>
+<span onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="../images/pile.png" width="15%;">
+</span>
 
 <body>
     <div id="wrapper">
         <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+            <input type="checkbox" id="menuToggle" />
 
             <label for="menuToggle" class="menuOpen">
                 <div class="open"></div>
@@ -27,16 +31,16 @@
                 <div class="menuContent">
                     <ul>
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a href="../index.html">HOME</a>
                         </li>
                         <li>
-                            <a href="work.html">WORK</a>
+                            <a href="../html/work.html">WORK</a>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                            <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">MUL B</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +79,7 @@
                                 <br>Afterwards in my exam I made a re-make to optimize the layout
                             </p>
 
-                            <img src="images/portfolio2.png" width="600px;" alt="portfolio">
+                            <img src="../images/portfolio2.png" width="600px;" alt="portfolio">
                         </div>
                         <div>
 
@@ -87,18 +91,18 @@
                     <div class="row ">
                         <h2 class="marg22">Re-make</h2>
                         <div class="column ">
-                            <img src="images/portfoliobeforeafter.jpg" onclick="openModal();currentSlide(1) " class="hover-shadow ">
+                            <img src="../images/portfoliobeforeafter.jpg" onclick="openModal();currentSlide(1) " class="hover-shadow ">
                             <p>I changed the colors of the layout to make it easier
                                 <br> on the eye, the bright yellow can be a little agressive.
 
                             </p>
                         </div>
                         <div class="column ">
-                            <img src="images/portfolio3.jpg " onclick="openModal();currentSlide(2) " class="hover-shadow ">
+                            <img src="../images/portfolio3.jpg " onclick="openModal();currentSlide(2) " class="hover-shadow ">
                             <p>It makes it more UX friendly</br>and easier to navigate. By changing the hover.</p>
                         </div>
                         <div class="column ">
-                            <img src="images/portfolio4.png " onclick="openModal();currentSlide(3) " class="hover-shadow ">
+                            <img src="../images/sites2.png " onclick="openModal();currentSlide(3) " class="hover-shadow ">
                             <p>iv'e also added a description to each element
                                 <br> to explain what it contains.
 
@@ -118,17 +122,17 @@
 
                             <div class="mySlides ">
                                 <div class="numbertext ">1 / 3</div>
-                                <img src="images/portfoliobeforeafter.jpg " style="width:100% ">
+                                <img src="../images/portfoliobeforeafter.jpg " style="width:100% ">
                             </div>
 
                             <div class="mySlides ">
                                 <div class="numbertext ">2 / 3</div>
-                                <img src="images/portfolio3.jpg " style="width:100% ">
+                                <img src="../images/portfolio3.jpg " style="width:100% ">
                             </div>
 
                             <div class="mySlides ">
                                 <div class="numbertext ">3 / 3</div>
-                                <img src="images/portfolio4.png " style="width:100% ">
+                                <img src="../images/portfolio4.png " style="width:100% ">
                             </div>
 
 
@@ -159,6 +163,26 @@
 
 <script src="script.js "> </script>
 <script>
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     //--------This is the LIGHTBOX-------
     // Open the Modal
     function openModal() {
