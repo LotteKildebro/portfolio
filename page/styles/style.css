@@ -625,6 +625,7 @@ margin-left: 10px;
   .item5 .imglot{
     width: 80%;
   }
+  
   @media only screen and (max-width: 600px) {
     .menu {
       width: 100%;
@@ -641,6 +642,7 @@ margin-left: 10px;
 .imglot2 {
   display: block;
   margin-left: 20px;
+  width: 100%;
 }
 #container_about{
   display: none;
