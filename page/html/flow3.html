@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="shortcut icon" href="../images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/style.css" rel="stylesheet">
@@ -13,11 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Lotte's Portfolio</title>
 </head>
-<span onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="../images/pile.png" width="15%;">
-</span>
+
 
 <body>
+    <span onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../images/pile.png" style="width:15%;" alt="go to top arrow">
+    </span>
+
     <div id="wrapper">
         <div id="menuArea">
             <input type="checkbox" id="menuToggle" />
@@ -40,7 +42,7 @@
                             <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="../html/mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">SCHOOL WORK</a>
                         </li>
                     </ul>
                 </div>
@@ -66,189 +68,169 @@
         </header>
         <main>
             <div class="learn">
-                <a href="learn3.html" target="_blank ">Læring for flow 3</a>
+                <a href="learn3.html" target="_blank">Learning for flow 3</a>
             </div>
             <div class="bgf">
 
-                <div class="bgf">
-                    <div class="flex-container">
-                        <div>
-                            <h2> FLOW 3 </h2>
-                            <p>we had to make an XD prototype app.
-                                <br>I made an app for the music bar Gimle
-                                <br>I created the app for an fictional campagn to support
-                                <br>FN 17 goals, specifically the goal "stop hunger"
-                            </p>
+                <div class="flex-container">
+                    <div>
+                        <h2> FLOW 3 </h2>
+                        <p>we had to make an XD prototype app.
+                            <br>I made an app for the music bar Gimle
+                            <br>I created the app for an fictional campagn to support
+                            <br>FN 17 goals, specifically the goal "stop hunger"
+                        </p>
 
-                            <img src="../images/gimle.png" width="600px;" alt="portfolio">
-                        </div>
-                        <div>
-
-                            <a class="marg" href=" https://xd.adobe.com/view/e7f5fede-80e6-4880-5b72-6a30107f8e4b-91c4/?hints=off " target="_blank ">XD link</a>
-                            <a class="marg" href="assignflow3.html " target="_blank ">Read assignment</a>
-                            <a class="marg" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aa3308229-a914-4630-945f-dbc5515e7256"
-                                target="_blank ">Pdf report</a>
-                        </div>
+                        <img src="../images/gimle.png" style="width:600px;" alt="portfolio">
                     </div>
-                    <div class="row ">
-                        <h2 class="marg22">Re-make</h2>
-                        <div class="column ">
-                            <img src="../images/gimle2.png" onclick="openModal();currentSlide(1) " class="hover-shadow ">
-                            <p>This is the index page of the XD prototype
-                                <br> my teacher thought that the orange ticket.
-                                <br>could resemble a bandage instead of a ticket...
+                    <div>
 
-                            </p>
-                        </div>
-                        <div class="column ">
-                            <img src="../images/gimle3.png " onclick="openModal();currentSlide(2) " class="hover-shadow ">
-                            <p>So I changed the color to grey, so that the user of the page
-                                <br>wont have any misleading content.
-                            </p>
-                        </div>
-                        <div class="column ">
-                            <img src="../images/ticket.png" onclick="openModal();currentSlide(3) " class="hover-shadow ">
-                            <p>Close up on the ticket
-                                <br>
-
-                                </br>
-
-                            </p>
-                        </div>
+                        <a class="marg" href=" https://xd.adobe.com/view/e7f5fede-80e6-4880-5b72-6a30107f8e4b-91c4/?hints=off " target="_blank">XD link</a>
+                        <a class="marg" href="assignflow3.html " target="_blank">Read assignment</a>
+                        <a class="marg" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aa3308229-a914-4630-945f-dbc5515e7256"
+                            target="_blank">Pdf report</a>
                     </div>
-
-
-
-
-                    <!-- The Modal/Lightbox -->
-                    <div id="myModal " class="modal ">
-                        <span class="close cursor " onclick="closeModal() ">&times;</span>
-                        <div class="modal-content ">
-
-                            <div class="mySlides ">
-                                <div class="numbertext ">1 / 3</div>
-                                <img src="../images/gimlebefore.png" style="width:100% ">
-                            </div>
-
-                            <div class="mySlides ">
-                                <div class="numbertext ">2 / 3</div>
-                                <img src="../images/gimleafter.png " style="width:100% ">
-                            </div>
-
-                            <div class="mySlides ">
-                                <div class="numbertext ">3 / 3</div>
-                                <img src="../images/gimleticket.png" style="width:100% ">
-                            </div>
-
-
-
-                            <!-- Next/previous controls -->
-                            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
-                            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
-
-                            <!-- Caption text -->
-                            <div class="caption-container ">
-                                <p id="caption "></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
                 </div>
+                <div class="row ">
+                    <h2 class="marg22">Re-make</h2>
+                    <div class="column ">
+                        <img src="../images/gimle2.png" onclick="openModal();currentSlide(1) " class="hover-shadow " alt="Gimle 1">
+                        <p>This is the index page of the XD prototype
+                            <br> my teacher thought that the orange ticket.
+                            <br>could resemble a bandage instead of a ticket...
+
+                        </p>
+                    </div>
+                    <div class="column ">
+                        <img src="../images/gimle3.png " onclick="openModal();currentSlide(2) " class="hover-shadow " alt="Gimle 2">
+                        <p>So I changed the color to grey, so that the user of the page
+                            <br>wont have any misleading content.
+                        </p>
+                    </div>
+                    <div class="column ">
+                        <img src="../images/ticket.png" onclick="openModal();currentSlide(3) " class="hover-shadow " alt="Gimle 3">
+                        <p>Close up on the ticket
+                            <br>
+
+                            <br>
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal ">
+                    <span class="close cursor " onclick="closeModal() ">&times;</span>
+                    <div class="modal-content ">
+
+                        <div class="mySlides ">
+                            <div class="numbertext ">1 / 3</div>
+                            <img src="../images/gimlebefore.png" style="width:100% " alt="gimle">
+                        </div>
+
+                        <div class="mySlides ">
+                            <div class="numbertext ">2 / 3</div>
+                            <img src="../images/gimleafter.png " style="width:100% " alt="gimle">
+                        </div>
+
+                        <div class="mySlides ">
+                            <div class="numbertext ">3 / 3</div>
+                            <img src="../images/gimleticket.png" style="width:100% " alt="gimle">
+                        </div>
+
+
+
+                        <!-- Next/previous controls -->
+                        <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                        <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container ">
+                            <p id="caption"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
 
         </main>
 
 
 
-        </div>
-        <!-- end wrapper -->
+    </div>
+    <!-- end wrapper -->
+    <script src="script.js "> </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        //--------This is the LIGHTBOX-------
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal ").style.display = "block ";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal ").style.display = "none ";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("demo ");
+            var captionText = document.getElementById("caption ");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+    </script>
 </body>
 
-<script src="script.js "> </script>
-<script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    //--------This is the LIGHTBOX-------
-    // Open the Modal
-    function openModal() {
-        document.getElementById("myModal ").style.display = "block ";
-    }
-
-    // Close the Modal
-    function closeModal() {
-        document.getElementById("myModal ").style.display = "none ";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides ");
-        var dots = document.getElementsByClassName("demo ");
-        var captionText = document.getElementById("caption ");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none ";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active ", " ");
-        }
-        slides[slideIndex - 1].style.display = "block ";
-        dots[slideIndex - 1].className += " active ";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-    $(function () {
-
-        $('#goDown').click(function (event) {
-            // dette gør at det ikke er default
-            event.preventDefault();
-            // højden af doc.
-            var n = $('#trailer').offset().top;
-            $('html, body').animate({ scrollTop: n }, 3500);
-        });
-
-        $("#readmore").click(function () {
-            $("#ekstra").toggle(function () {
-                if ($("#ekstra").is(":visible")) {
-                    $("#readmore").text("Læs mindre...");
-                } else {
-                    $("#readmore").text("Læs mere...");
-                }
-            });
-        });
-    });
-
-</script>
 
 </html>

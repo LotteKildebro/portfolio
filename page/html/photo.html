@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="shortcut icon" href="../images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/style.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <body>
     <span onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="../images/pile.png" width="15%;">
+        <img src="../images/pile.png" style="width: 15%;" alt="To the top arrow">
     </span>
 
     <div id="wrapper">
@@ -42,7 +42,7 @@
                             <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="../html/mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">SCHOOL WORK</a>
                         </li>
                     </ul>
                 </div>
@@ -56,45 +56,45 @@
 	gridsystem for my photos
 -->
 
-            <body>
-                <main class="container">
-                    <div>
-                        <img src="../images/photo/img4.png" alt="">
-                    </div>
 
-                    <div class="horizontal">
-                        <img src="../images/photo/img14.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="../images/photo/img1.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="../images/photo/img10.jpg" alt="">
-                    </div>
-                    <div class="big">
-                        <img src="../images/photo/img8.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="../images/photo/img11.png" alt="">
-                    </div>
-                    <div class="vertical">
-                        <img src="../images/photo/img2.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="../images/photo/img13.jpg" alt="">
-                    </div>
-                    <div class="horizontal">
-                        <img src="../images/photo/img6.png" alt="">
-                    </div>
-                    <div>
-                        <img src="../images/photo/img15.jpg" alt="">
-                    </div>
-                    <div class="big">
-                        <img src="../images/photo/img16.jpg" alt="">
-                    </div>
+            <main class="container">
+                <div>
+                    <img src="../images/photo/img4.png" alt="">
+                </div>
 
-                </main>
-            </body>
+                <div class="horizontal">
+                    <img src="../images/photo/img14.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../images/photo/img1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../images/photo/img10.jpg" alt="">
+                </div>
+                <div class="big">
+                    <img src="../images/photo/img8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../images/photo/img11.png" alt="">
+                </div>
+                <div class="vertical">
+                    <img src="../images/photo/img2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../images/photo/img13.jpg" alt="">
+                </div>
+                <div class="horizontal">
+                    <img src="../images/photo/img6.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/photo/img15.jpg" alt="">
+                </div>
+                <div class="big">
+                    <img src="../images/photo/img16.jpg" alt="">
+                </div>
+
+            </main>
+
         </div>
         <!--wrapit end-->
         <footer class="col-sm-12 ">
@@ -128,28 +128,28 @@
 
     </div>
     <!-- end wrapper -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
-</body>
-<script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-    }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
 
 </html>

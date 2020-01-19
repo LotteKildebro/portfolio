@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="shortcut icon" href="../images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/style.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body>
     <span onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="../images/pile.png" width="15%;">
+        <img src="../images/pile.png" style="width: 15%;" alt="To the top arrow">
     </span>
     <div id="wrapper">
         <div id="menuArea">
@@ -40,7 +40,7 @@
                             <a href="../html/about.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="../html/mulb.html">MUL B</a>
+                            <a href="../html/mulb.html">SCHOOL WORK</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +52,7 @@
 
         <div class="row">
             <div class="column">
-                <img src="../images/web3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="../images/web3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="website with galleries">
                 <p>I’ve created this website in my spare time, basically I was practicing how to make
                     <br> different types of galleries without the
                     <br> help of templates. The concept is just a
@@ -65,20 +65,26 @@
                 </p>
             </div>
             <div class="column">
-                <img src="../images/web1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                <p>This website was a project I made when</br> I was attending the “web-integrator” education. It is an dynamic
-                    website, with </br>data taken from php-myadmin, with the</br> use of SQL, Routes and services. I used
-                    </br>the JS runtime system Node.js The website was purely made with the intention of making get, post,
-                    put and delete request. </br>Thats why the product view is a bit off in terms of the layout.</p>
+                <img src="../images/web1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Dynamic website">
+                <p>This website was a project I made when
+                    <br> I was attending the “web-integrator” education. It is an dynamic website, with
+                    <br>data taken from php-myadmin, with the
+                    <br> use of SQL, Routes and services. I used
+                    <br>the JS runtime system Node.js The website was purely made with the intention of making get, post, put
+                    and delete request.
+                    <br>Thats why the product view is a bit off in terms of the layout.</p>
             </div>
             <div class="column">
-                <img src="../images/web5.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                <p>This website was a project I made when</br> I was attending the “web-integrator” education. We were working
-                    in teams. </br>I was working with the TV industry students</br> that was making a trailer,
-                    </br>for an fictive movie. I programmed the website while the grapic designer students, made the posters
-                    and logos. </br>
+                <img src="../images/web5.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="trailer website">
+                <p>This website was a project I made when
+                    <br> I was attending the “web-integrator” education. We were working in teams.
+                    <br>I was working with the TV industry students
+                    <br> that was making a trailer,
+                    <br>for an fictive movie. I programmed the website while the grapic designer students, made the posters and
+                    logos.
+                    <br>
                     <a href="https://nextmedieproduktion.dk/uge2017_48/gruppe_9/?fbclid=IwAR2c5Rga0BkNRvoaQMCziKJ2l4wVa4uYK5knJlxw4F8m0DVvtFkF80fogBI">Visit site.</a>
-                    </br>
+                    <br>
 
                 </p>
             </div>
@@ -92,17 +98,17 @@
 
                 <div class="mySlides">
                     <div class="numbertext">1 / 4</div>
-                    <img src="../images/web3.jpg" style="width:100%">
+                    <img src="../images/web3.jpg" style="width:100%" alt="gallery website">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 4</div>
-                    <img src="../images/web1.jpg" style="width:100%">
+                    <img src="../images/web1.jpg" style="width:100%" alt="dynmaic website">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">3 / 4</div>
-                    <img src="../images/web4.jpg" style="width:100%">
+                    <img src="../images/web4.jpg" style="width:100%" alt="trailer website">
                 </div>
 
 
@@ -155,70 +161,70 @@
 
     </div>
     <!-- end wrapper -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        //--------This is the LIGHTBOX-------
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 </body>
-<script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-    //--------This is the LIGHTBOX-------
-    // Open the Modal
-    function openModal() {
-        document.getElementById("myModal").style.display = "block";
-    }
-
-    // Close the Modal
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-</script>
 
 </html>
